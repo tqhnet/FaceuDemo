@@ -20,6 +20,7 @@
 @property (nonatomic, strong) GPUImageMovieWriter *movieWriter;         //视频录制操作
 @property (nonatomic, strong) LFGPUImageBeautyFilter *leveBeautyFilter; //美颜滤镜
 @property (nonatomic, strong) GPUImageView *outputView;                 //输出视图
+
 @end
 
 @implementation WJGPUImageCameraController

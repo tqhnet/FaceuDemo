@@ -257,6 +257,7 @@
 				TargetAttributes = {
 					0DA4EEB41F01FFFE00B460D0 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 87S2AUX254;
 						ProvisioningStyle = Automatic;
 					};
 					0DA4EECD1F01FFFE00B460D0 = {
@@ -526,9 +527,11 @@
 			baseConfigurationReference = 8AC626130D105F9A777C9B08 /* Pods-FaceuDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 87S2AUX254;
 				INFOPLIST_FILE = FaceuDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tqh.FaceuDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moyou.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -538,9 +541,11 @@
 			baseConfigurationReference = 62BF55380C042CC3D3835A58 /* Pods-FaceuDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 87S2AUX254;
 				INFOPLIST_FILE = FaceuDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tqh.FaceuDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moyou.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

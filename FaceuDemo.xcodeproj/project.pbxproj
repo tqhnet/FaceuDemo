@@ -15,6 +15,9 @@
 		0DA4EEC81F01FFFE00B460D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DA4EEC61F01FFFE00B460D0 /* LaunchScreen.storyboard */; };
 		0DA4EED31F01FFFE00B460D0 /* FaceuDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4EED21F01FFFE00B460D0 /* FaceuDemoTests.m */; };
 		0DA4EEDE1F01FFFE00B460D0 /* FaceuDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4EEDD1F01FFFE00B460D0 /* FaceuDemoUITests.m */; };
+		0DA4EEF01F0201C100B460D0 /* WJGPUImageCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4EEEF1F0201C100B460D0 /* WJGPUImageCameraController.m */; };
+		0DA4EEF31F0201E600B460D0 /* WJGPUImageCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4EEF21F0201E600B460D0 /* WJGPUImageCameraView.m */; };
+		0DA4EEF81F020CD900B460D0 /* LFGPUImageBeautyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4EEF71F020CD900B460D0 /* LFGPUImageBeautyFilter.m */; };
 		AF2D65308C08DA78180375BC /* libPods-FaceuDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B00B8417BDB93D4B8D296DDB /* libPods-FaceuDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +55,12 @@
 		0DA4EED91F01FFFE00B460D0 /* FaceuDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceuDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DA4EEDD1F01FFFE00B460D0 /* FaceuDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceuDemoUITests.m; sourceTree = "<group>"; };
 		0DA4EEDF1F01FFFE00B460D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DA4EEEE1F0201C100B460D0 /* WJGPUImageCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJGPUImageCameraController.h; sourceTree = "<group>"; };
+		0DA4EEEF1F0201C100B460D0 /* WJGPUImageCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJGPUImageCameraController.m; sourceTree = "<group>"; };
+		0DA4EEF11F0201E600B460D0 /* WJGPUImageCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJGPUImageCameraView.h; sourceTree = "<group>"; };
+		0DA4EEF21F0201E600B460D0 /* WJGPUImageCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJGPUImageCameraView.m; sourceTree = "<group>"; };
+		0DA4EEF61F020CD900B460D0 /* LFGPUImageBeautyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFGPUImageBeautyFilter.h; sourceTree = "<group>"; };
+		0DA4EEF71F020CD900B460D0 /* LFGPUImageBeautyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFGPUImageBeautyFilter.m; sourceTree = "<group>"; };
 		62BF55380C042CC3D3835A58 /* Pods-FaceuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceuDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaceuDemo/Pods-FaceuDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8AC626130D105F9A777C9B08 /* Pods-FaceuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceuDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FaceuDemo/Pods-FaceuDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B00B8417BDB93D4B8D296DDB /* libPods-FaceuDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FaceuDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,10 +117,15 @@
 		0DA4EEB71F01FFFE00B460D0 /* FaceuDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0DA4EEF51F0202D700B460D0 /* GPUImageFilter */,
 				0DA4EEBB1F01FFFE00B460D0 /* AppDelegate.h */,
 				0DA4EEBC1F01FFFE00B460D0 /* AppDelegate.m */,
 				0DA4EEBE1F01FFFE00B460D0 /* ViewController.h */,
 				0DA4EEBF1F01FFFE00B460D0 /* ViewController.m */,
+				0DA4EEEE1F0201C100B460D0 /* WJGPUImageCameraController.h */,
+				0DA4EEEF1F0201C100B460D0 /* WJGPUImageCameraController.m */,
+				0DA4EEF11F0201E600B460D0 /* WJGPUImageCameraView.h */,
+				0DA4EEF21F0201E600B460D0 /* WJGPUImageCameraView.m */,
 				0DA4EEC11F01FFFE00B460D0 /* Main.storyboard */,
 				0DA4EEC41F01FFFE00B460D0 /* Assets.xcassets */,
 				0DA4EEC61F01FFFE00B460D0 /* LaunchScreen.storyboard */,
@@ -145,6 +159,15 @@
 				0DA4EEDF1F01FFFE00B460D0 /* Info.plist */,
 			);
 			path = FaceuDemoUITests;
+			sourceTree = "<group>";
+		};
+		0DA4EEF51F0202D700B460D0 /* GPUImageFilter */ = {
+			isa = PBXGroup;
+			children = (
+				0DA4EEF61F020CD900B460D0 /* LFGPUImageBeautyFilter.h */,
+				0DA4EEF71F020CD900B460D0 /* LFGPUImageBeautyFilter.m */,
+			);
+			path = GPUImageFilter;
 			sourceTree = "<group>";
 		};
 		BBE683CEFF48EAF5CD6C4FEA /* Frameworks */ = {
@@ -348,8 +371,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DA4EEF81F020CD900B460D0 /* LFGPUImageBeautyFilter.m in Sources */,
 				0DA4EEC01F01FFFE00B460D0 /* ViewController.m in Sources */,
+				0DA4EEF01F0201C100B460D0 /* WJGPUImageCameraController.m in Sources */,
 				0DA4EEBD1F01FFFE00B460D0 /* AppDelegate.m in Sources */,
+				0DA4EEF31F0201E600B460D0 /* WJGPUImageCameraView.m in Sources */,
 				0DA4EEBA1F01FFFE00B460D0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,6 +610,7 @@
 				0DA4EEE41F01FFFE00B460D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DA4EEE51F01FFFE00B460D0 /* Build configuration list for PBXNativeTarget "FaceuDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -592,6 +619,7 @@
 				0DA4EEE71F01FFFE00B460D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DA4EEE81F01FFFE00B460D0 /* Build configuration list for PBXNativeTarget "FaceuDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -600,6 +628,7 @@
 				0DA4EEEA1F01FFFE00B460D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

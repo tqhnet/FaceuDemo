@@ -18,6 +18,17 @@
 		0DA4EEF01F0201C100B460D0 /* WJGPUImageCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4EEEF1F0201C100B460D0 /* WJGPUImageCameraController.m */; };
 		0DA4EEF31F0201E600B460D0 /* WJGPUImageCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4EEF21F0201E600B460D0 /* WJGPUImageCameraView.m */; };
 		0DA4EEF81F020CD900B460D0 /* LFGPUImageBeautyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4EEF71F020CD900B460D0 /* LFGPUImageBeautyFilter.m */; };
+		0DB4658E1F034B2000CA1379 /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB4658D1F034B2000CA1379 /* iflyMSC.framework */; };
+		0DB465901F034E0000CA1379 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB4658F1F034E0000CA1379 /* libz.tbd */; };
+		0DB465921F034E0C00CA1379 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB465911F034E0C00CA1379 /* CoreMotion.framework */; };
+		0DB465941F034E1600CA1379 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB465931F034E1600CA1379 /* AddressBook.framework */; };
+		0DB465961F034E2300CA1379 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB465951F034E2300CA1379 /* libstdc++.tbd */; };
+		0DB465981F034E2A00CA1379 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB465971F034E2A00CA1379 /* libc++.tbd */; };
+		0DB4659A1F034E3500CA1379 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB465991F034E3500CA1379 /* CoreTelephony.framework */; };
+		0DB4659C1F034E4A00CA1379 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB4659B1F034E4A00CA1379 /* MobileCoreServices.framework */; };
+		0DB4659E1F034E5400CA1379 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB4659D1F034E5400CA1379 /* AudioToolbox.framework */; };
+		0DB465A01F034E5F00CA1379 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB4659F1F034E5F00CA1379 /* CoreGraphics.framework */; };
+		0DB465A21F034E6900CA1379 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB465A11F034E6900CA1379 /* SystemConfiguration.framework */; };
 		AF2D65308C08DA78180375BC /* libPods-FaceuDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B00B8417BDB93D4B8D296DDB /* libPods-FaceuDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +72,17 @@
 		0DA4EEF21F0201E600B460D0 /* WJGPUImageCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJGPUImageCameraView.m; sourceTree = "<group>"; };
 		0DA4EEF61F020CD900B460D0 /* LFGPUImageBeautyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFGPUImageBeautyFilter.h; sourceTree = "<group>"; };
 		0DA4EEF71F020CD900B460D0 /* LFGPUImageBeautyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFGPUImageBeautyFilter.m; sourceTree = "<group>"; };
+		0DB4658D1F034B2000CA1379 /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
+		0DB4658F1F034E0000CA1379 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0DB465911F034E0C00CA1379 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		0DB465931F034E1600CA1379 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		0DB465951F034E2300CA1379 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		0DB465971F034E2A00CA1379 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		0DB465991F034E3500CA1379 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		0DB4659B1F034E4A00CA1379 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		0DB4659D1F034E5400CA1379 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0DB4659F1F034E5F00CA1379 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0DB465A11F034E6900CA1379 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		62BF55380C042CC3D3835A58 /* Pods-FaceuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceuDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaceuDemo/Pods-FaceuDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8AC626130D105F9A777C9B08 /* Pods-FaceuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceuDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FaceuDemo/Pods-FaceuDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B00B8417BDB93D4B8D296DDB /* libPods-FaceuDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FaceuDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +93,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DB465A21F034E6900CA1379 /* SystemConfiguration.framework in Frameworks */,
+				0DB465A01F034E5F00CA1379 /* CoreGraphics.framework in Frameworks */,
+				0DB4659E1F034E5400CA1379 /* AudioToolbox.framework in Frameworks */,
+				0DB4659C1F034E4A00CA1379 /* MobileCoreServices.framework in Frameworks */,
+				0DB4659A1F034E3500CA1379 /* CoreTelephony.framework in Frameworks */,
+				0DB465981F034E2A00CA1379 /* libc++.tbd in Frameworks */,
+				0DB465961F034E2300CA1379 /* libstdc++.tbd in Frameworks */,
+				0DB465941F034E1600CA1379 /* AddressBook.framework in Frameworks */,
+				0DB465921F034E0C00CA1379 /* CoreMotion.framework in Frameworks */,
+				0DB465901F034E0000CA1379 /* libz.tbd in Frameworks */,
+				0DB4658E1F034B2000CA1379 /* iflyMSC.framework in Frameworks */,
 				AF2D65308C08DA78180375BC /* libPods-FaceuDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,6 +150,7 @@
 		0DA4EEB71F01FFFE00B460D0 /* FaceuDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0DB4658D1F034B2000CA1379 /* iflyMSC.framework */,
 				0DA4EEF51F0202D700B460D0 /* GPUImageFilter */,
 				0DA4EEBB1F01FFFE00B460D0 /* AppDelegate.h */,
 				0DA4EEBC1F01FFFE00B460D0 /* AppDelegate.m */,
@@ -173,6 +207,16 @@
 		BBE683CEFF48EAF5CD6C4FEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0DB465A11F034E6900CA1379 /* SystemConfiguration.framework */,
+				0DB4659F1F034E5F00CA1379 /* CoreGraphics.framework */,
+				0DB4659D1F034E5400CA1379 /* AudioToolbox.framework */,
+				0DB4659B1F034E4A00CA1379 /* MobileCoreServices.framework */,
+				0DB465991F034E3500CA1379 /* CoreTelephony.framework */,
+				0DB465971F034E2A00CA1379 /* libc++.tbd */,
+				0DB465951F034E2300CA1379 /* libstdc++.tbd */,
+				0DB465931F034E1600CA1379 /* AddressBook.framework */,
+				0DB465911F034E0C00CA1379 /* CoreMotion.framework */,
+				0DB4658F1F034E0000CA1379 /* libz.tbd */,
 				B00B8417BDB93D4B8D296DDB /* libPods-FaceuDemo.a */,
 			);
 			name = Frameworks;
@@ -528,6 +572,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 87S2AUX254;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FaceuDemo",
+					"$(PROJECT_DIR)/FaceuDemo/iflyMSC.framework",
+				);
 				INFOPLIST_FILE = FaceuDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -542,6 +592,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 87S2AUX254;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FaceuDemo",
+					"$(PROJECT_DIR)/FaceuDemo/iflyMSC.framework",
+				);
 				INFOPLIST_FILE = FaceuDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

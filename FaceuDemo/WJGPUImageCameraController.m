@@ -10,6 +10,7 @@
 #import "WJGPUImageCameraView.h"
 #import <GPUImage.h>
 #import "LFGPUImageBeautyFilter.h"
+#import "iflyMSC.framework/Headers/IFlyFaceSDK.h"
 
 @interface WJGPUImageCameraController ()
 

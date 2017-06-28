@@ -28,15 +28,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:self.outputView];
     [self.view addSubview:self.cameraView];
+    
+    [self.videoCamera addTarget:self.leveBeautyFilter];
+    [self.leveBeautyFilter addTarget:self.outputView];
+    [self.videoCamera startCameraCapture];
 
 }
 
 - (void)viewWillLayoutSubviews {
     
+    self.outputView.frame = self.view.bounds;
 }
-
-
 
 #pragma mark - 懒加载
 
@@ -53,6 +57,34 @@
         [_outputView setFillMode:kGPUImageFillModePreserveAspectRatioAndFill];
     }
     return _outputView;
+}
+
+
+- (GPUImageStillCamera *)videoCamera {
+    if (!_videoCamera) {
+        _videoCamera = [[GPUImageStillCamera alloc] initWithSessionPreset:AVCaptureSessionPresetHigh cameraPosition:AVCaptureDevicePositionFront];
+        _videoCamera.outputImageOrientation = UIInterfaceOrientationPortrait;
+        _videoCamera.horizontallyMirrorFrontFacingCamera = YES;
+    }
+    return _videoCamera;
+}
+
+- (GPUImageFilterGroup *)normalFilter {
+    if (!_normalFilter) {
+        GPUImageFilter *filter = [[GPUImageFilter alloc] init]; //默认
+        _normalFilter = [[GPUImageFilterGroup alloc] init];
+        [(GPUImageFilterGroup *) _normalFilter setInitialFilters:[NSArray arrayWithObject: filter]];
+        [(GPUImageFilterGroup *) _normalFilter setTerminalFilter:filter];
+    }
+    return _normalFilter;
+}
+
+
+- (LFGPUImageBeautyFilter *)leveBeautyFilter {
+    if (!_leveBeautyFilter) {
+        _leveBeautyFilter = [[LFGPUImageBeautyFilter alloc] init];
+    }
+    return _leveBeautyFilter;
 }
 
 @end

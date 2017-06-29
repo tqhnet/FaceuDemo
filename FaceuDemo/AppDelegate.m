@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "WJGPUImageCameraController.h"
+#import <iflyMSC/IFlyFaceSDK.h>
+
+#define USER_APPID           @"5953c9bf" 
 @interface AppDelegate ()
 
 @end
@@ -16,11 +19,29 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+   
     
+    NSLog(@"IFlyMSC version=%@",[IFlySetting getVersion]);
+    //设置log等级，此处log为默认在app沙盒目录下的msc.log文件
+    [IFlySetting setLogFile:LVL_ALL];
+    
+    //输出在console的log开关
+    [IFlySetting showLogcat:NO];
+//
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+//    NSString *cachePath = [paths objectAtIndex:0];
+//    //设置msc.log的保存路径
+//    [IFlySetting setLogFilePath:cachePath];
+    
+    NSString *initString = [[NSString alloc] initWithFormat:@"appid=%@,",USER_APPID];
+    //所有服务启动前，需要确保执行createUtility
+    [IFlySpeechUtility createUtility:initString];
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     WJGPUImageCameraController *controller = [[WJGPUImageCameraController alloc]init];
     self.window.rootViewController = controller;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

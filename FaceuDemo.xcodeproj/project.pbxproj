@@ -29,6 +29,18 @@
 		0DB4659E1F034E5400CA1379 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB4659D1F034E5400CA1379 /* AudioToolbox.framework */; };
 		0DB465A01F034E5F00CA1379 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB4659F1F034E5F00CA1379 /* CoreGraphics.framework */; };
 		0DB465A21F034E6900CA1379 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB465A11F034E6900CA1379 /* SystemConfiguration.framework */; };
+		0DD34F561F03F79600EA6E67 /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD34F3F1F03F79600EA6E67 /* CanvasView.m */; };
+		0DD34F571F03F79600EA6E67 /* CaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD34F421F03F79600EA6E67 /* CaptureManager.m */; };
+		0DD34F581F03F79600EA6E67 /* CalculatorTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD34F451F03F79600EA6E67 /* CalculatorTools.m */; };
+		0DD34F591F03F79600EA6E67 /* IFlyFaceImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD34F471F03F79600EA6E67 /* IFlyFaceImage.m */; };
+		0DD34F5A1F03F79600EA6E67 /* UIImage+compress.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD34F491F03F79600EA6E67 /* UIImage+compress.m */; };
+		0DD34F5B1F03F79600EA6E67 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD34F4B1F03F79600EA6E67 /* UIImage+Extensions.m */; };
+		0DD34F5C1F03F79600EA6E67 /* PermissionDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD34F4E1F03F79600EA6E67 /* PermissionDetector.m */; };
+		0DD34F5D1F03F79600EA6E67 /* IFlyFaceResultDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD34F511F03F79600EA6E67 /* IFlyFaceResultDetector.m */; };
+		0DD34F5E1F03F79600EA6E67 /* IFlyFaceResultKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD34F531F03F79600EA6E67 /* IFlyFaceResultKeys.m */; };
+		0DD34F5F1F03F79600EA6E67 /* IFlyFaceResultTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD34F551F03F79600EA6E67 /* IFlyFaceResultTrack.m */; };
+		0DD34F641F0410C000EA6E67 /* Crown.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD34F631F0410C000EA6E67 /* Crown.png */; };
+		0DD34F681F04167C00EA6E67 /* eyes1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD34F671F04167C00EA6E67 /* eyes1.png */; };
 		AF2D65308C08DA78180375BC /* libPods-FaceuDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B00B8417BDB93D4B8D296DDB /* libPods-FaceuDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +95,28 @@
 		0DB4659D1F034E5400CA1379 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		0DB4659F1F034E5F00CA1379 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0DB465A11F034E6900CA1379 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0DD34F3E1F03F79600EA6E67 /* CanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
+		0DD34F3F1F03F79600EA6E67 /* CanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
+		0DD34F411F03F79600EA6E67 /* CaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureManager.h; sourceTree = "<group>"; };
+		0DD34F421F03F79600EA6E67 /* CaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureManager.m; sourceTree = "<group>"; };
+		0DD34F441F03F79600EA6E67 /* CalculatorTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorTools.h; sourceTree = "<group>"; };
+		0DD34F451F03F79600EA6E67 /* CalculatorTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorTools.m; sourceTree = "<group>"; };
+		0DD34F461F03F79600EA6E67 /* IFlyFaceImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyFaceImage.h; sourceTree = "<group>"; };
+		0DD34F471F03F79600EA6E67 /* IFlyFaceImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFlyFaceImage.m; sourceTree = "<group>"; };
+		0DD34F481F03F79600EA6E67 /* UIImage+compress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+compress.h"; sourceTree = "<group>"; };
+		0DD34F491F03F79600EA6E67 /* UIImage+compress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+compress.m"; sourceTree = "<group>"; };
+		0DD34F4A1F03F79600EA6E67 /* UIImage+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extensions.h"; sourceTree = "<group>"; };
+		0DD34F4B1F03F79600EA6E67 /* UIImage+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extensions.m"; sourceTree = "<group>"; };
+		0DD34F4D1F03F79600EA6E67 /* PermissionDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PermissionDetector.h; sourceTree = "<group>"; };
+		0DD34F4E1F03F79600EA6E67 /* PermissionDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PermissionDetector.m; sourceTree = "<group>"; };
+		0DD34F501F03F79600EA6E67 /* IFlyFaceResultDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyFaceResultDetector.h; sourceTree = "<group>"; };
+		0DD34F511F03F79600EA6E67 /* IFlyFaceResultDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFlyFaceResultDetector.m; sourceTree = "<group>"; };
+		0DD34F521F03F79600EA6E67 /* IFlyFaceResultKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyFaceResultKeys.h; sourceTree = "<group>"; };
+		0DD34F531F03F79600EA6E67 /* IFlyFaceResultKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFlyFaceResultKeys.m; sourceTree = "<group>"; };
+		0DD34F541F03F79600EA6E67 /* IFlyFaceResultTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyFaceResultTrack.h; sourceTree = "<group>"; };
+		0DD34F551F03F79600EA6E67 /* IFlyFaceResultTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFlyFaceResultTrack.m; sourceTree = "<group>"; };
+		0DD34F631F0410C000EA6E67 /* Crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Crown.png; sourceTree = "<group>"; };
+		0DD34F671F04167C00EA6E67 /* eyes1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyes1.png; sourceTree = "<group>"; };
 		62BF55380C042CC3D3835A58 /* Pods-FaceuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceuDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaceuDemo/Pods-FaceuDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8AC626130D105F9A777C9B08 /* Pods-FaceuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceuDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FaceuDemo/Pods-FaceuDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B00B8417BDB93D4B8D296DDB /* libPods-FaceuDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FaceuDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +184,9 @@
 		0DA4EEB71F01FFFE00B460D0 /* FaceuDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0DD34F671F04167C00EA6E67 /* eyes1.png */,
+				0DD34F631F0410C000EA6E67 /* Crown.png */,
+				0DD34F3C1F03F79600EA6E67 /* tools */,
 				0DB4658D1F034B2000CA1379 /* iflyMSC.framework */,
 				0DA4EEF51F0202D700B460D0 /* GPUImageFilter */,
 				0DA4EEBB1F01FFFE00B460D0 /* AppDelegate.h */,
@@ -202,6 +239,73 @@
 				0DA4EEF71F020CD900B460D0 /* LFGPUImageBeautyFilter.m */,
 			);
 			path = GPUImageFilter;
+			sourceTree = "<group>";
+		};
+		0DD34F3C1F03F79600EA6E67 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				0DD34F3D1F03F79600EA6E67 /* CanvasView */,
+				0DD34F401F03F79600EA6E67 /* Capture */,
+				0DD34F431F03F79600EA6E67 /* Image */,
+				0DD34F4C1F03F79600EA6E67 /* Permission */,
+				0DD34F4F1F03F79600EA6E67 /* Result */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		0DD34F3D1F03F79600EA6E67 /* CanvasView */ = {
+			isa = PBXGroup;
+			children = (
+				0DD34F3E1F03F79600EA6E67 /* CanvasView.h */,
+				0DD34F3F1F03F79600EA6E67 /* CanvasView.m */,
+			);
+			path = CanvasView;
+			sourceTree = "<group>";
+		};
+		0DD34F401F03F79600EA6E67 /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				0DD34F411F03F79600EA6E67 /* CaptureManager.h */,
+				0DD34F421F03F79600EA6E67 /* CaptureManager.m */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
+		0DD34F431F03F79600EA6E67 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				0DD34F441F03F79600EA6E67 /* CalculatorTools.h */,
+				0DD34F451F03F79600EA6E67 /* CalculatorTools.m */,
+				0DD34F461F03F79600EA6E67 /* IFlyFaceImage.h */,
+				0DD34F471F03F79600EA6E67 /* IFlyFaceImage.m */,
+				0DD34F481F03F79600EA6E67 /* UIImage+compress.h */,
+				0DD34F491F03F79600EA6E67 /* UIImage+compress.m */,
+				0DD34F4A1F03F79600EA6E67 /* UIImage+Extensions.h */,
+				0DD34F4B1F03F79600EA6E67 /* UIImage+Extensions.m */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		0DD34F4C1F03F79600EA6E67 /* Permission */ = {
+			isa = PBXGroup;
+			children = (
+				0DD34F4D1F03F79600EA6E67 /* PermissionDetector.h */,
+				0DD34F4E1F03F79600EA6E67 /* PermissionDetector.m */,
+			);
+			path = Permission;
+			sourceTree = "<group>";
+		};
+		0DD34F4F1F03F79600EA6E67 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				0DD34F501F03F79600EA6E67 /* IFlyFaceResultDetector.h */,
+				0DD34F511F03F79600EA6E67 /* IFlyFaceResultDetector.m */,
+				0DD34F521F03F79600EA6E67 /* IFlyFaceResultKeys.h */,
+				0DD34F531F03F79600EA6E67 /* IFlyFaceResultKeys.m */,
+				0DD34F541F03F79600EA6E67 /* IFlyFaceResultTrack.h */,
+				0DD34F551F03F79600EA6E67 /* IFlyFaceResultTrack.m */,
+			);
+			path = Result;
 			sourceTree = "<group>";
 		};
 		BBE683CEFF48EAF5CD6C4FEA /* Frameworks */ = {
@@ -341,7 +445,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD34F681F04167C00EA6E67 /* eyes1.png in Resources */,
 				0DA4EEC81F01FFFE00B460D0 /* LaunchScreen.storyboard in Resources */,
+				0DD34F641F0410C000EA6E67 /* Crown.png in Resources */,
 				0DA4EEC51F01FFFE00B460D0 /* Assets.xcassets in Resources */,
 				0DA4EEC31F01FFFE00B460D0 /* Main.storyboard in Resources */,
 			);
@@ -417,9 +523,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DA4EEF81F020CD900B460D0 /* LFGPUImageBeautyFilter.m in Sources */,
+				0DD34F5E1F03F79600EA6E67 /* IFlyFaceResultKeys.m in Sources */,
 				0DA4EEC01F01FFFE00B460D0 /* ViewController.m in Sources */,
+				0DD34F571F03F79600EA6E67 /* CaptureManager.m in Sources */,
 				0DA4EEF01F0201C100B460D0 /* WJGPUImageCameraController.m in Sources */,
+				0DD34F5C1F03F79600EA6E67 /* PermissionDetector.m in Sources */,
+				0DD34F591F03F79600EA6E67 /* IFlyFaceImage.m in Sources */,
+				0DD34F5F1F03F79600EA6E67 /* IFlyFaceResultTrack.m in Sources */,
+				0DD34F581F03F79600EA6E67 /* CalculatorTools.m in Sources */,
 				0DA4EEBD1F01FFFE00B460D0 /* AppDelegate.m in Sources */,
+				0DD34F5B1F03F79600EA6E67 /* UIImage+Extensions.m in Sources */,
+				0DD34F5A1F03F79600EA6E67 /* UIImage+compress.m in Sources */,
+				0DD34F561F03F79600EA6E67 /* CanvasView.m in Sources */,
+				0DD34F5D1F03F79600EA6E67 /* IFlyFaceResultDetector.m in Sources */,
 				0DA4EEF31F0201E600B460D0 /* WJGPUImageCameraView.m in Sources */,
 				0DA4EEBA1F01FFFE00B460D0 /* main.m in Sources */,
 			);

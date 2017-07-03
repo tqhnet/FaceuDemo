@@ -12,7 +12,7 @@
 #define RECT_KEY   @"RECT_KEY"
 #define RECT_ORI   @"RECT_ORI"
 
-@property (nonatomic , strong) NSArray *arrPersons ;
+@property (nonatomic , strong) NSArray *arrPersons;
 
 //头部贴图
 @property (nonatomic,strong) UIImage *  headMap;

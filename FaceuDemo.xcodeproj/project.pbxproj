@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D54EE281F04AD0500541F1D /* WJIFFaceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D54EE271F04AD0500541F1D /* WJIFFaceModel.m */; };
 		0DA4EEBA1F01FFFE00B460D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4EEB91F01FFFE00B460D0 /* main.m */; };
 		0DA4EEBD1F01FFFE00B460D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4EEBC1F01FFFE00B460D0 /* AppDelegate.m */; };
 		0DA4EEC01F01FFFE00B460D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4EEBF1F01FFFE00B460D0 /* ViewController.m */; };
@@ -40,7 +41,6 @@
 		0DD34F5E1F03F79600EA6E67 /* IFlyFaceResultKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD34F531F03F79600EA6E67 /* IFlyFaceResultKeys.m */; };
 		0DD34F5F1F03F79600EA6E67 /* IFlyFaceResultTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD34F551F03F79600EA6E67 /* IFlyFaceResultTrack.m */; };
 		0DD34F641F0410C000EA6E67 /* Crown.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD34F631F0410C000EA6E67 /* Crown.png */; };
-		0DD34F681F04167C00EA6E67 /* eyes1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD34F671F04167C00EA6E67 /* eyes1.png */; };
 		AF2D65308C08DA78180375BC /* libPods-FaceuDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B00B8417BDB93D4B8D296DDB /* libPods-FaceuDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D54EE261F04AD0500541F1D /* WJIFFaceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJIFFaceModel.h; sourceTree = "<group>"; };
+		0D54EE271F04AD0500541F1D /* WJIFFaceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJIFFaceModel.m; sourceTree = "<group>"; };
 		0DA4EEB51F01FFFE00B460D0 /* FaceuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DA4EEB91F01FFFE00B460D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0DA4EEBB1F01FFFE00B460D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,7 +118,6 @@
 		0DD34F541F03F79600EA6E67 /* IFlyFaceResultTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyFaceResultTrack.h; sourceTree = "<group>"; };
 		0DD34F551F03F79600EA6E67 /* IFlyFaceResultTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFlyFaceResultTrack.m; sourceTree = "<group>"; };
 		0DD34F631F0410C000EA6E67 /* Crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Crown.png; sourceTree = "<group>"; };
-		0DD34F671F04167C00EA6E67 /* eyes1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyes1.png; sourceTree = "<group>"; };
 		62BF55380C042CC3D3835A58 /* Pods-FaceuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceuDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaceuDemo/Pods-FaceuDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8AC626130D105F9A777C9B08 /* Pods-FaceuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceuDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FaceuDemo/Pods-FaceuDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B00B8417BDB93D4B8D296DDB /* libPods-FaceuDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FaceuDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,7 +185,6 @@
 		0DA4EEB71F01FFFE00B460D0 /* FaceuDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0DD34F671F04167C00EA6E67 /* eyes1.png */,
 				0DD34F631F0410C000EA6E67 /* Crown.png */,
 				0DD34F3C1F03F79600EA6E67 /* tools */,
 				0DB4658D1F034B2000CA1379 /* iflyMSC.framework */,
@@ -195,6 +195,8 @@
 				0DA4EEBF1F01FFFE00B460D0 /* ViewController.m */,
 				0DA4EEEE1F0201C100B460D0 /* WJGPUImageCameraController.h */,
 				0DA4EEEF1F0201C100B460D0 /* WJGPUImageCameraController.m */,
+				0D54EE261F04AD0500541F1D /* WJIFFaceModel.h */,
+				0D54EE271F04AD0500541F1D /* WJIFFaceModel.m */,
 				0DA4EEF11F0201E600B460D0 /* WJGPUImageCameraView.h */,
 				0DA4EEF21F0201E600B460D0 /* WJGPUImageCameraView.m */,
 				0DA4EEC11F01FFFE00B460D0 /* Main.storyboard */,
@@ -445,7 +447,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DD34F681F04167C00EA6E67 /* eyes1.png in Resources */,
 				0DA4EEC81F01FFFE00B460D0 /* LaunchScreen.storyboard in Resources */,
 				0DD34F641F0410C000EA6E67 /* Crown.png in Resources */,
 				0DA4EEC51F01FFFE00B460D0 /* Assets.xcassets in Resources */,
@@ -523,6 +524,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DA4EEF81F020CD900B460D0 /* LFGPUImageBeautyFilter.m in Sources */,
+				0D54EE281F04AD0500541F1D /* WJIFFaceModel.m in Sources */,
 				0DD34F5E1F03F79600EA6E67 /* IFlyFaceResultKeys.m in Sources */,
 				0DA4EEC01F01FFFE00B460D0 /* ViewController.m in Sources */,
 				0DD34F571F03F79600EA6E67 /* CaptureManager.m in Sources */,

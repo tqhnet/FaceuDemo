@@ -72,12 +72,15 @@
 
     //方向的问题，检测不了人脸
     NSString* strResult=[self.faceDetector trackFrame:faceImage.data withWidth:faceImage.width height:faceImage.height direction:1];
-    NSLog(@"%@",strResult);
+    NSLog(@"------%@",strResult);
     [self praseTrackResult:strResult OrignImage:faceImage];
     //此处清理图片数据，以防止因为不必要的图片数据的反复传递造成的内存卷积占用
     faceImage.data=nil;
     faceImage=nil;
 }
+
+
+#pragma mark - 人脸识别相关方法
 
 /*
  人脸识别
@@ -98,6 +101,7 @@
         }
         
         NSString* faceRet=[faceDic objectForKey:KCIFlyFaceResultRet];
+        //抓去面部数据
         NSArray* faceArray=[faceDic objectForKey:KCIFlyFaceResultFace];
         faceDic=nil;
         
@@ -120,11 +124,17 @@
             
             if(faceInArr && [faceInArr isKindOfClass:[NSDictionary class]]){
                 
+                //抓取得面部矩形区域
                 NSDictionary* positionDic=[faceInArr objectForKey:KCIFlyFaceResultPosition];
+                
+                //检测面部轮廓
                 NSString* rectString=[self praseDetect:positionDic OrignImage: faceImg];
                 positionDic=nil;
                 
+                //抓取面部表情
                 NSDictionary* landmarkDic=[faceInArr objectForKey:KCIFlyFaceResultLandmark];
+                
+                //检测面部特征
                 NSMutableArray* strPoints=[self praseAlign:landmarkDic OrignImage:faceImg];
                 landmarkDic=nil;
                 
@@ -201,7 +211,6 @@
     
 }
 
-#pragma mark - 人脸识别相关方法
 //检测到人脸
 - (void) showFaceLandmarksAndFaceRectWithPersonsArray:(NSMutableArray *)arrPersons{
     if (self.viewCanvas.hidden) {
@@ -234,6 +243,8 @@
     BOOL isFrontCamera = self.videoCamera.cameraPosition == AVCaptureDevicePositionFront;
     
     // scale coordinates so they fit in the preview box, which may be scaled
+    
+    //图片出来的时候是旋转了的么高度比宽度大
     CGFloat widthScaleBy = self.view.frame.size.width / faceImg.height;
     CGFloat heightScaleBy = self.view.frame.size.height / faceImg.width;
     
@@ -242,22 +253,23 @@
     CGFloat left=[[positionDic objectForKey:KCIFlyFaceResultLeft] floatValue];
     CGFloat right=[[positionDic objectForKey:KCIFlyFaceResultRight] floatValue];
     
-    float cx = (left+right)/2;
-    float cy = (top + bottom)/2;
-    float w = right - left;
-    float h = bottom - top;
+    float cx = (left+right)/2;      //人脸x中心点
+    float cy = (top + bottom)/2;    //人脸y中心点
+    float w = right - left;         //人脸宽度
+    float h = bottom - top;         //人脸高度
     
     float ncx = cy ;
     float ncy = cx ;
     
-    CGRect rectFace = CGRectMake(ncx-w/2 ,ncy-w/2 , w, h);
+    CGRect rectFace = CGRectMake(ncx-w/2 ,ncy-w/2 , w, h);//重新得出人脸矩形
     
+    //如果是后置摄像后改变款高度并旋转90度
     if(!isFrontCamera){
         rectFace=rSwap(rectFace);
         rectFace=rRotate90(rectFace, faceImg.height, faceImg.width);
         
     }
-    
+    //按比例得出最新的矩形
     rectFace=rScale(rectFace, widthScaleBy, heightScaleBy);
     rectFace = CGRectMake(rectFace.origin.x, rectFace.origin.y, rectFace.size.width, rectFace.size.height);
     return NSStringFromCGRect(rectFace);
